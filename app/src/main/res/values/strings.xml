@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">SmartCon</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_activity_network_calc">NetworkCalcActivity</string>
+    <string name="title_activity_utkcalc">UTKCalcActivity</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="spinner_subnet_text">Wybierz podmaske</string>
+    <string-array name="subnet_addresses">
+        <item>128.0.0.0 /1</item>
+        <item>192.0.0.0 /2</item>
+        <item>224.0.0.0 /3</item>
+        <item>240.0.0.0 /4</item>
+        <item>248.0.0.0 /5</item>
+        <item>252.0.0.0 /6</item>
+        <item>254.0.0.0 /7</item>
+        <item>255.0.0.0 /8</item>
+        <item>255.128.0.0 /9</item>
+        <item>255.192.0.0 /10</item>
+        <item>255.224.0.0 /11</item>
+        <item>255.240.0.0 /12</item>
+        <item>255.248.0.0 /13</item>
+        <item>255.252.0.0 /14</item>
+        <item>255.254.0.0 /15</item>
+        <item>255.255.0.0 /16</item>
+        <item>255.255.128.0 /17</item>
+        <item>255.255.192.0 /18</item>
+        <item>255.255.224.0 /19</item>
+        <item>255.255.240.0 /20</item>
+        <item>255.255.248.0 /21</item>
+        <item>255.255.252.0 /22</item>
+        <item>255.255.254.0 /23</item>
+        <item>255.255.255.0 /24</item>
+        <item>255.255.255.128 /25</item>
+        <item>255.255.255.192 /26</item>
+        <item>255.255.255.224 /27</item>
+        <item>255.255.255.240 /28</item>
+        <item>255.255.255.248 /29</item>
+    </string-array>
+</resources>

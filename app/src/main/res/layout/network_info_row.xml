@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="24dp"
+    android:layout_marginBottom="16dp"
+    android:layout_marginTop="0dp"
+    android:background="#FAFAFA"
+    android:elevation="6dp"
+    android:padding="16dp"
+    tools:targetApi="lollipop">
+
+    <TextView
+        android:id="@+id/network_address_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:fontFamily="@font/roboto"
+        android:text="Adres sieci"
+        android:textColor="@color/textPrimary"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/network_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="5dp"
+        android:text="192.168.1.0"
+        android:textColor="@color/colorPrimary"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/network_address_title"
+        android:background="@color/divider"
+        android:orientation="horizontal" />
+
+    <TextView
+        android:id="@+id/mask_address_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/network_address_title"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/roboto"
+        android:text="Maska sieci"
+        android:textColor="@color/textPrimary"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/mask_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/mask_address_title"
+        android:layout_alignParentRight="true"
+        android:layout_alignRight="@+id/mask_address_title"
+        android:layout_below="@id/network_address"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:text="192.168.1.255"
+        android:textColor="@color/colorPrimary"
+        android:textSize="16sp"
+        android:textStyle="bold" android:layout_alignParentEnd="true" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/mask_address_title"
+        android:background="@color/divider"
+        android:orientation="horizontal" />
+
+    <TextView
+        android:id="@+id/broadcast_address_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/mask_address_title"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/roboto"
+        android:text="Adres broadcast"
+        android:textColor="@color/textPrimary"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/broadcast_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/broadcast_address_title"
+        android:layout_alignParentRight="true"
+        android:layout_alignRight="@+id/broadcast_address_title"
+        android:layout_below="@id/mask_address"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:text="192.168.1.255"
+        android:textColor="@color/colorPrimary"
+        android:textSize="16sp"
+        android:textStyle="bold" android:layout_alignParentEnd="true" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/broadcast_address_title"
+        android:background="@color/divider"
+        android:orientation="horizontal" />
+
+    <TextView
+        android:id="@+id/hosts_amount_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/broadcast_address_title"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/roboto"
+        android:text="Ilość hostów"
+        android:textColor="@color/textPrimary"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/hosts_amount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/hosts_amount_title"
+        android:layout_alignParentRight="true"
+        android:layout_alignRight="@+id/hosts_amount_title"
+        android:layout_below="@id/broadcast_address"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:text="254"
+        android:textColor="@color/colorPrimary"
+        android:textSize="16sp"
+        android:textStyle="bold" android:layout_alignParentEnd="true" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/hosts_amount_title"
+        android:background="@color/divider"
+        android:orientation="horizontal" />
+
+    <TextView
+        android:id="@+id/subnets_amount_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/hosts_amount_title"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/roboto"
+        android:text="Ilość podsieci"
+        android:textColor="@color/textPrimary"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/subnets_amount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/subnets_amount_title"
+        android:layout_alignParentRight="true"
+        android:layout_alignRight="@+id/subnets_amount_title"
+        android:layout_below="@id/hosts_amount"
+        android:layout_marginTop="5dp"
+        android:text="254"
+        android:textColor="@color/colorPrimary"
+        android:textSize="16sp"
+        android:textStyle="bold" android:layout_alignParentEnd="true" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/subnets_amount_title"
+        android:background="@color/divider"
+        android:orientation="horizontal" />
+
+    <TextView
+        android:id="@+id/address_class_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/subnets_amount_title"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/roboto"
+        android:text="Klasa"
+        android:textColor="@color/textPrimary"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/address_class"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/address_class_title"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignRight="@+id/address_class_title"
+        android:layout_below="@id/subnets_amount"
+        android:layout_marginTop="5dp"
+        android:text="A"
+        android:textColor="@color/colorPrimary"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+</RelativeLayout>
